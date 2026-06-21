@@ -29,6 +29,7 @@ void main()
     else if (pid == 0)
     {
         sleep(1);           // Sleep so parent exits first
+        printf("\n");
         system("ps -l");    // Shows child's new parent is PID 1
         printf("child process\n");
         printf("from child pid: %d\n", getpid());
